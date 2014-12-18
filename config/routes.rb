@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # replaced get: "pages/home" (created when making controller)
   root "pages#home"
 
