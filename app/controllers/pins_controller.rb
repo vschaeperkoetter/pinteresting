@@ -5,16 +5,15 @@ class PinsController < ApplicationController
 
   def index
     @pins = Pin.all
-    respond_with(@pins)
+    # respond_with(@pins)
   end
 
   def show
-    respond_with(@pin)
+    # respond_with(@pin)
   end
 
   def new
     @pin = Pin.new
-    respond_with(@pin)
   end
 
   def edit
@@ -22,18 +21,23 @@ class PinsController < ApplicationController
 
   def create
     @pin = Pin.new(pin_params)
-    @pin.save
-    respond_with(@pin)
+    if @pin.save
+      redirect_to @pin, notice: 'Pin was successfully created.'
+    else
+      render action: 'new'
+    end
+    # @pin.save
+    # respond_with(@pin)
   end
 
   def update
     @pin.update(pin_params)
-    respond_with(@pin)
+    # respond_with(@pin)
   end
 
   def destroy
     @pin.destroy
-    respond_with(@pin)
+    # respond_with(@pin)
   end
 
   private
