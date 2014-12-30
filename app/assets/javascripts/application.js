@@ -14,6 +14,7 @@
 //= require jquery_ujs
 // load bootstrap under jQuery or javascripts from bootstrap will not work!
 //= require bootstrap
+//= require jquery.turbolinks
 //= require turbolinks
 //= require masonry/jquery.masonry
 //= require_tree .
