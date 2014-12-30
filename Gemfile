@@ -43,6 +43,8 @@ gem 'paperclip', '~> 3.0'
 # Amazon S3 image storing
 gem 'aws-sdk'
 
+gem 'masonry-rails'
+gem 'jquery-turbolinks'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
