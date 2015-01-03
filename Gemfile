@@ -45,6 +45,9 @@ gem 'aws-sdk'
 
 gem 'masonry-rails'
 gem 'jquery-turbolinks'
+
+gem 'will_paginate', '~> 3.0.5'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
