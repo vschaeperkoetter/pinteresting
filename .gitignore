@@ -15,5 +15,5 @@
 /log/*.log
 /tmp
 .DS_Store
-/public/system/*
+/public/system/
 vendor/bundle/
